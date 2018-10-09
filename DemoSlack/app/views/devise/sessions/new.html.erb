@@ -1,0 +1,27 @@
+
+
+<div class="col-md-4 col-md-offset-4">
+  <form class="text-center border border-light p-5" action="<%=session_path(resource_name)%>" method="post">
+      <input name="utf8" type="hidden" value="" class="">
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" class="">
+
+      <p class="h4 mb-4">Sign in</p>
+
+      <!-- Email -->
+      <input type="email" id="defaultLoginFormEmail" name="user[email]" class="form-control mb-4" placeholder="E-mail">
+
+      <!-- Password -->
+      <input type="password" id="defaultLoginFormPassword" name="user[password]" class="form-control mb-4" placeholder="Password"><br>
+
+      <!-- Sign in button -->
+      <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+      <!-- Register -->
+      <!-- Social login -->
+      
+
+  </form>
+  <%#= render "devise/shared/links" %>
+</div>
+
+
